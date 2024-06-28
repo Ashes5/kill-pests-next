@@ -127,6 +127,8 @@ body {
     width: 900px;
     margin: auto;
     font-size: 20px;
+    padding: 10px;
+    line-height: 1.6rem;
 }
 
 .jo-pest-input{
@@ -134,7 +136,7 @@ body {
     background-color: white;
     border-radius: 20px;
     border: blue 1px solid;
-    width: 400px;
+    width: 600px;
     height: 40px;
     margin-top: 80px;
     text-align: center;

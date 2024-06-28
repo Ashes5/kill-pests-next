@@ -62,14 +62,12 @@ export default function Page() {
 
         axios.post(apiUrl, data)
             .then(res => {
-                setResponse(res.data.candidates[0].content.parts[0].text.split("**"))
+                setResponse(res.data.candidates[0].content.parts[0].text.replaceAll("*" , ""));
             })
             .catch(err => {
                 console.log('데이터 제대로 못받음');
             })
     }
-
-
 
 
     return (
@@ -79,14 +77,16 @@ export default function Page() {
             </div>
             {/* && 연산자이기 때문에 앞 리스폰스가 참이어야지 뒤에가 보인다 값이 없으면 바로 끝남*/}
             <div className="jo-pest-res">
-                {response && <p>{response}</p>}
+                {response && response.split('.').map((el, index) => {
+                    return <span key={index}>{el}.<br/></span>
+                })}
             </div>
             <form onSubmit={handleSubmit}>
                 <input type="text" value={question} onChange={handleQuestion} className="jo-pest-input"
                        placeholder="해충의 이름이나 특징을 적어주세요"/>
                 <div className="jo-btn-flex">
-                <button type="submit" className="jo-loc-button">확인</button>
-                <button onClick={handleInitInput} className="jo-loc-button">다시하기</button>
+                    <button type="submit" className="jo-loc-button">확인</button>
+                    <button onClick={handleInitInput} className="jo-loc-button">다시하기</button>
                 </div>
             </form>
         </div>
