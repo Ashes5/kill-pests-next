@@ -88,7 +88,7 @@ export default function Page() {
                 <div className="jo-res-big">
                 <div className="jo-pest-res">
                 {response && response.split('.').map((el, index) => {
-                    return <span key={index}>{el}.<br/></span>
+                    return <span key={index}>{el}<br/></span>
                 })}
             </div>
                 </div>
