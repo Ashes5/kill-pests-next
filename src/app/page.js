@@ -20,7 +20,7 @@ export default function Home() {
             <div>
                 <div className="jo-Kill">KiLLING PESTS!</div>
             </div>
-            <div>
+            <div className="jo-zmrl">
                 <button onClick={handleNext} className="jo-home-button">시작하기</button>
             </div>
         </div>

@@ -35,7 +35,7 @@ export default function LocationPage() {
                     </div>
                 ))}
             </div>
-            <div>
+            <div className="jo-zmrl">
                 <button onClick={handleNext} className="jo-loc-button"> 다음</button>
             </div>
         </div>

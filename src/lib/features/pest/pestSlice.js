@@ -6,7 +6,8 @@ const initialState = {
         { name : '산' , imgName : '⛰️',  place : '산'},
         { name : '바닷가' , imgName : '🌊',  place : '바닷가'},
     ],
-    newinput : []
+    newinput : [],
+    apiResponse : []
 }
 
 const pestSlice = createSlice({
@@ -23,10 +24,13 @@ const pestSlice = createSlice({
                 state.newinput = [...state.newinput, state.location[locationIndex]];
             }
 
+        },
+        aiRes: (state, action) => {
+            state.apiResponse.push(action.payload)
         }
     }
 })
 
 
-export const {resetInput,pickInput} = pestSlice.actions
+export const {resetInput,pickInput, aiRes} = pestSlice.actions
 export default pestSlice.reducer
