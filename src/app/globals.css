@@ -215,12 +215,21 @@ body {
         background: #1545a2;;
         color: white;
         border-radius: 20px;
-        width: 35%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+        width: 40%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
         height: 50px; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
         font-size: 30px; /* 예시로 3vw 사용, 필요에 따라 조정 */
         margin-top: 7%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
     }
-
+    .jo-pest-res {
+        font-family: 'Ownglyph_eunbyul21-Rg';
+        background-color: white;
+        border-radius: 20px;
+        width: 90%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+        margin: auto;
+        font-size: 1.3rem; /* 예시로 2vw 사용, 필요에 따라 조정 */
+        padding: 1%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+        line-height: 1.6rem;
+    }
 
 
 }
