@@ -11,11 +11,15 @@ export default function LocationPage() {
     const { newinput , location} = useSelector((state) => state.pests);
 
     const handlePick = (itemName) => {
+
         if (newinput.length < 1) {
             dispatch(pickInput(itemName))
         } else {
             alert('하나만 선택할 수 있습니다.')
         }
+        router.push('/killpests');
+
+
     }
 
     const handleNext = () => {
@@ -27,7 +31,7 @@ export default function LocationPage() {
             <h2 className="jo-lock-h2">해충이 나오는 장소는요 ?</h2>
             <div className="jo-lock-flex">
                 {location.map((item) => (
-                    <div key={item.id} onClick={() => handlePick(item.name)}>
+                    <div className="jo-click" key={item.id} onClick={() => handlePick(item.name)}>
                         <div className="jo-loc-boss">
                             <div className="jo-emote">{item.imgName}</div>
                             <p className="jo-loc-p">{item.name}</p>
@@ -36,7 +40,6 @@ export default function LocationPage() {
                 ))}
             </div>
             <div className="jo-zmrl">
-                <button onClick={handleNext} className="jo-loc-button"> 다음</button>
             </div>
         </div>
     )

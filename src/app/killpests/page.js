@@ -87,7 +87,7 @@ export default function Page() {
             {/* && 연산자이기 때문에 앞 리스폰스가 참이어야지 뒤에가 보인다 값이 없으면 바로 끝남*/}
                 <div className="jo-res-big">
                 <div className="jo-pest-res">
-                {response && response.split('.').map((el, index) => {
+                    {response && response.split('.').map((el, index) => {
                     return <span key={index}>{el}<br/></span>
                 })}
             </div>
