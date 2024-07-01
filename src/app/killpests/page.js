@@ -96,8 +96,8 @@ export default function Page() {
                 <input type="text" value={question} onChange={handleQuestion} className="jo-pest-input"
                        placeholder="해충의 이름이나 특징을 적어주세요"/>
                 <div className="jo-btn-flex">
-                    <button type="submit" className="jo-loc-button">확인</button>
-                    <button onClick={handleInitInput} className="jo-loc-button">다시하기</button>
+                    <button type="submit" className="jo-loc-button-2">확인</button>
+                    <button onClick={handleInitInput} className="jo-loc-button-2">다시하기</button>
                 </div>
             </form>
             </>}

@@ -63,6 +63,17 @@ body {
     font-size: 1.8rem; /* 예시로 3vw 사용, 필요에 따라 조정 */
     margin-top: 7%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
 }
+.jo-loc-button-2{
+    font-family: 'Ownglyph_eunbyul21-Rg';
+    border: blue 1px solid;
+    background: #1545a2;;
+    color: white;
+    border-radius: 20px;
+    width: 25%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+    height: 7%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+    font-size: 1.8rem; /* 예시로 3vw 사용, 필요에 따라 조정 */
+    margin-top: 7%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+}
 .jo-home-button-1{
     font-family: 'Ownglyph_eunbyul21-Rg';
     border: blue 1px solid;
@@ -170,17 +181,21 @@ body {
 
 .jo-res-big{
     width: 80%;
-    height: 200px;
+    height: 100%;
     background-color: white;
     margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
 @media (max-width: 500px) {
     .jo-res-big{
         height: 100%;
-    }
-    .jo-res-big{
         font-size: 1.4rem;
+
     }
     .jo-home-button, .jo-loc-button{
         width: 80%;
@@ -221,14 +236,26 @@ body {
         margin-top: 7%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
     }
     .jo-pest-res {
-        font-family: 'Ownglyph_eunbyul21-Rg';
-        background-color: white;
-        border-radius: 20px;
         width: 90%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
         margin: auto;
         font-size: 1.3rem; /* 예시로 2vw 사용, 필요에 따라 조정 */
         padding: 1%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
         line-height: 1.6rem;
+    }
+    .jo-pest-input {
+        width: 80%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+        font-size: 1.2rem;
+    }
+    .jo-loc-button-2{
+        border: blue 1px solid;
+        background: #1545a2;;
+        color: white;
+        border-radius: 20px;
+        width: 40%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+        height: 40px; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+        font-size: 1.8rem; /* 예시로 3vw 사용, 필요에 따라 조정 */
+        margin-top: 7%; /* 예시로 퍼센트 사용, 필요에 따라 조정 */
+        line-height: 40px;
     }
 
 
